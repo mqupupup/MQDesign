@@ -2,5 +2,4 @@
 技术栈：react + ts + 单元测试。
 项目依赖安装：
 ###`npm install`
-项目启动：
-### `npm start storybook`
+项目启动：### `npm start storybook`
