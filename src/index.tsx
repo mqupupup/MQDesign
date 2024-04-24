@@ -1,15 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import './index.scss.hbs.hbs';
+import Button from './button/index';
 import reportWebVitals from './reportWebVitals';
+import Icon from "./icon";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+      <Button type="primary">click me</Button>
+      <Button >click me</Button>
+      <Button type="primary" className="my-btn">primary button </Button>
+      <Icon type={"fixed"}/>
   </React.StrictMode>
 );
 

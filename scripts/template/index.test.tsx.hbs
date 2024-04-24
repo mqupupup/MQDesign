@@ -1,0 +1,39 @@
+import React from 'react';
+import {fireEvent, render, screen} from '@testing-library/react';
+import {{componentName}} from './index.hbs';
+
+describe('{{componentName}}',() => {
+    test('renders {{componentName}}', () => {
+        render(<{{componentName}}>Click me</{{componentName}}>);
+        const linkElement = screen.getByText(/Click me/i);
+        expect(linkElement).toBeInTheDocument();
+    });
+
+/**
+    test('renders Primary {{componentName}}', () => {
+        const {container} = render(<{{componentName}} type={"primary"}>Click me</{{componentName}}>);
+        // const linkElement = screen.getByText(/Click me/i);
+        expect(container.querySelector('.ant-btn-primary')).toBeInTheDocument();
+    });
+
+    test('renders Medium {{componentName}}', () => {
+        const {container} = render(<{{componentName}} size="medium">Click me</{{componentName}}>);
+        // const linkElement = screen.getByText(/Click me/i);
+        expect(container.querySelector('.ant-btn-medium')).toBeInTheDocument();
+    });
+
+    test('renders Normal {{componentName}}', () => {
+        const {container} = render(<{{componentName}} type={"normal"}>Click me</{{componentName}}>);
+        expect(container.querySelector('.ant-btn-normal')).toBeInTheDocument();
+    });
+
+    test('wheather support click', () => {
+        const onClick = jest.fn();
+        render(<{{componentName}} type={"primary"} onClick={onClick}>Click me</{{componentName}}>);
+        const linkElement = screen.getByText(/Click me/i);
+        fireEvent.click(linkElement);
+
+        expect(onClick).toBeCalled();
+    });
+**/
+})
