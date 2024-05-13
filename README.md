@@ -5,6 +5,9 @@
 覆盖层（Overlay）、提示框（Tooltips）、文本区域（TextArea）、表单（Form）以及流程指示（Process）。
 
 技术栈：react + ts + 单元测试。
+
 项目依赖安装：
+
 ###`npm install`
+
 项目启动：### `npm run storybook`
